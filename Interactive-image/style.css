@@ -1,7 +1,7 @@
 /* Custom Font Declaration */
 @font-face {
   font-family: 'Monstafaller Free';
-  src: url('fonts/Monstafaller FREE.ttf') format('woff');
+  src: url('/fonts/Monstafaller FREE.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -310,12 +310,12 @@ h1 {
   }
 
   .hotspot {
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.125rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
     /* border: 2px solid #fff; */
     border-radius: 26.5px;
-    background: rgba(255, 255, 255, 0.5);
+ 
   }
 
   .popup-overlay {
