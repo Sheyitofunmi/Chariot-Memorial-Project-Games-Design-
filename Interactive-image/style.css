@@ -1,7 +1,7 @@
 /* Custom Font Declaration */
 @font-face {
   font-family: 'Monstafaller Free';
-  src: url('/fonts/Monstafaller FREE.ttf') format('woff');
+  src: url('../fonts/Monstafaller FREE.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
