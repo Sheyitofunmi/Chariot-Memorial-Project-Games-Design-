@@ -60,7 +60,7 @@
         </div>
 
         <!-- Screen 3: Card Game -->
-        <div class="screen" id="game-screen">
+        <div class="screen container" id="game-screen">
             <div class="game-header">
                 <h1>Matching Pairs - Back of cards</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
@@ -69,22 +69,23 @@
                 <div class="cards-grid" id="cards-grid">
                     <!-- Cards will be generated here -->
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal for card details -->
-    <div class="modal-overlay" id="modal">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal()">✕</button>
-            <div class="modal-image">
-                <div class="card-display">
-                    <img id="modal-image" src="" alt="Card">
+                
+                <!-- Modal for card details -->
+                <div class="modal-overlay" id="modal">
+                    <div class="modal-content">
+                       
+                        <div class="modal-image">
+                            <div class="card-display">
+                                <img id="modal-image" src="" alt="Card">
+                            </div>
+                        </div>
+                        <div class="modal-text">
+                            <button class="modal-close" onclick="closeModal()">✕</button>
+                            <h2>Random fact title of pop-up</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="modal-text">
-                <h2>Random fact title of pop-up</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
             </div>
         </div>
     </div>
