@@ -26,6 +26,53 @@ body {
   overflow: visible !important;
 }
 
+/* Landscape orientation message */
+.orientation-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000031;
+  color: white;
+  z-index: 10000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.orientation-message .rotate-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  animation: rotate 2s ease-in-out infinite;
+}
+
+.orientation-message h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.orientation-message p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+@keyframes rotate {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -203,24 +250,26 @@ p {
   display: block;
 }
 
-.game-images {
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-  margin-bottom: 40px;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+.game-container {
   border-radius: 12px;
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 2rem 3rem;
+  padding: 4rem 3rem;
   width: 100%;
   background-repeat: repeat-y;
   background-size: cover;
   background-position: center top;
   background-image: url("data:image/svg+xml,%3Csvg width='1220' height='800' viewBox='0 0 1220 800' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_7749_8408)'%3E%3Cpath d='M0 12C0 5.37257 5.37258 0 12 0H1208C1214.63 0 1220 5.37258 1220 12V788C1220 794.627 1214.63 800 1208 800H12C5.3726 800 0 794.627 0 788V12Z' fill='%23C3C3AB'/%3E%3Cg filter='url(%23filter0_f_7749_8408)'%3E%3Cpath d='M364 910.378C364 1016.63 276.472 1102.76 168.5 1102.76C60.5283 1102.76 -27 1016.63 -27 910.378C-27 804.131 60.5283 718 168.5 718C276.472 718 364 804.131 364 910.378Z' fill='%238D0F30'/%3E%3C/g%3E%3Cg filter='url(%23filter1_f_7749_8408)'%3E%3Cellipse cx='1066.5' cy='800.378' rx='195.5' ry='192.378' fill='%23696A2E'/%3E%3C/g%3E%3Cg filter='url(%23filter2_f_7749_8408)'%3E%3Cellipse cx='107' cy='45.02' rx='124' ry='122.02' fill='%23696A2E'/%3E%3C/g%3E%3Cg filter='url(%23filter3_f_7749_8408)'%3E%3Cellipse cx='916' cy='19.02' rx='124' ry='122.02' fill='%238D0F30'/%3E%3C/g%3E%3Cg filter='url(%23filter4_f_7749_8408)'%3E%3Cpath d='M726.478 681.03C582.068 664.008 355 706.418 355 706.418C355 706.418 578.812 772.157 726.478 779.371C840.415 784.938 1018 760.987 1018 760.987C1018 760.987 843.717 694.85 726.478 681.03Z' fill='%236EA6BA'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_7749_8408' x='-438.52' y='306.48' width='1214.04' height='1207.8' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='205.76' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter1_f_7749_8408' x='459.48' y='196.48' width='1214.04' height='1207.8' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='205.76' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter2_f_7749_8408' x='-368.3' y='-428.3' width='950.6' height='946.64' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='175.65' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter3_f_7749_8408' x='380.48' y='-514.52' width='1071.04' height='1067.08' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='205.76' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter4_f_7749_8408' x='234.3' y='556.3' width='904.4' height='344.61' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='60.35' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3CclipPath id='clip0_7749_8408'%3E%3Cpath d='M0 12C0 5.37257 5.37258 0 12 0H1208C1214.63 0 1220 5.37258 1220 12V788C1220 794.627 1214.63 800 1208 800H12C5.3726 800 0 794.627 0 788V12Z' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
   position: relative;
+}
+
+.game-images {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .image-container {
@@ -240,38 +289,17 @@ p {
 
 .difference-marker {
   position: absolute;
-  width: 70px;
-  height: 70px;
-  border: 4px solid rgba(255, 255, 255, 0.9);
+  width: 60px;
+  height: 60px;
+
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s;
-  background: rgba(255, 255, 255, 0.15);
+
   backdrop-filter: blur(2px);
-}
-
-.difference-marker::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.difference-marker::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: white;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='54' height='54' viewBox='0 0 54 54' fill='none'%3E%3CforeignObject x='0' y='0' width='0' height='0'%3E%3Cdiv xmlns='http://www.w3.org/1999/xhtml' style='backdrop-filter:blur(4px);clip-path:url(%23bgblur_0_7749_8439_clip_path);height:100%25;width:100%25'%3E%3C/div%3E%3C/foreignObject%3E%3Cpath data-figma-bg-blur-radius='8' d='M27 1C41.3594 1 53 12.6406 53 27C53 41.3594 41.3594 53 27 53C12.6406 53 1 41.3594 1 27C1 12.6406 12.6406 1 27 1Z' fill='white' fill-opacity='0.5' stroke='white' stroke-width='2'/%3E%3Cdefs%3E%3CclipPath id='bgblur_0_7749_8439_clip_path' transform='translate(0 0)'%3E%3Cpath d='M27 1C41.3594 1 53 12.6406 53 27C53 41.3594 41.3594 53 27 53C12.6406 53 1 41.3594 1 27C1 12.6406 12.6406 1 27 1Z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
 }
 
 .difference-marker:hover {
@@ -322,24 +350,25 @@ p {
 }
 
 .progress-item {
-  width: 55px;
-  height: 55px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
-  background: #f5f5f5;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  font-weight: 900;
-  color: #00008b;
-  border: 4px solid #d0d0d0;
-  font-family: 'Impact', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  color: #000031;
+  border: 2px solid #000031;
 }
 
 .progress-item.completed {
-  background: #8b1538;
+  background: #8d0f30;
   color: white;
-  border-color: #8b1538;
+  border-color: #8d0f30;
   font-size: 2rem;
 }
 
@@ -365,7 +394,7 @@ p {
 
 .modal-content {
   background: #dfe0d2;
-  border-radius: 15px;
+  border-radius: 8px;
   padding: 50px 60px;
   max-width: 950px;
   width: 100%;
@@ -376,29 +405,33 @@ p {
   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.5);
 }
 
+.modal-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
 .close-button {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
   background: #8b1538;
-  color: white;
   border: none;
-  width: 45px;
-  height: 45px;
-  border-radius: 8px;
-  font-size: 1.8rem;
-  font-weight: bold;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background 0.3s;
-  line-height: 1;
-  padding-bottom: 3px;
+  z-index: 15;
 }
 
 .close-button:hover {
-  background: #6b0f2a;
+  background: #6b0f28;
 }
 
 .modal-image {
@@ -407,10 +440,10 @@ p {
 }
 
 .modal-image-frame {
-  background: linear-gradient(135deg, #c4c2a8, #a8b8b5);
-  border-radius: 20px;
-  padding: 18px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background: #c3c3ab;
+  border-radius: 14px;
+  padding: 14px;
+  transform: rotate(-3.464deg);
 }
 
 .modal-image-frame img {
@@ -427,19 +460,15 @@ p {
 
 .modal-title {
   font-size: clamp(2rem, 4vw, 3rem);
-  color: #00008b;
-  font-weight: 900;
-  margin-bottom: 25px;
-  letter-spacing: -1px;
   text-transform: uppercase;
-}
-
-.modal-description {
-  font-family: 'Arial', sans-serif;
-  font-size: clamp(0.95rem, 2vw, 1.05rem);
-  color: #000;
-  line-height: 1.7;
+  letter-spacing: -1px;
+  font-weight: bold;
+  font-family: 'Monstafaller Free', Impact, 'Arial Black', sans-serif;
+  font-style: normal;
   font-weight: 400;
+  line-height: 125%;
+  color: #007;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 769px) {
@@ -455,8 +484,10 @@ p {
 }
 
 @media (max-width: 1024px) {
+  body {
+    min-height: auto;
+  }
   .landing-screen {
-    /* flex-direction: row; */
     gap: 40px;
   }
 
@@ -473,7 +504,7 @@ p {
   }
 
   .modal-content {
-    flex-direction: row;
+    flex-direction: column;
     padding: 40px 30px;
   }
 }
@@ -486,10 +517,6 @@ p {
   .image-stack {
     margin: 0 auto;
     height: 350px;
-  }
-
-  .modal-content {
-    flex-direction: column;
   }
 
   .difference-marker {
@@ -522,5 +549,16 @@ p {
   .modal {
     position: fixed;
     border-radius: 0;
+  }
+}
+
+/* Show orientation message on mobile portrait ONLY when game is active */
+@media (max-width: 768px) and (orientation: portrait) {
+  body:has(.game-screen.active) .orientation-message {
+    display: flex !important;
+  }
+
+  .game-screen.active {
+    display: none !important;
   }
 }

@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>St Nazaire Raid Memorial Trust</title>
+    <meta
+      name="description"
+      content="operation Chariot Memorial Project
+    Games Design"
+    />
+
+    <!-- Standard favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+  </head>
+
+  <style>
+    /* Custom Font Declaration */
+    @font-face {
+      font-family: 'Monstafaller Free';
+      src: url('../fonts/Monstafaller FREE.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: visible !important;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      text-align: left;
+      max-width: 80rem;
+      width: 100%;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      color: #007;
+      font-size: clamp(2rem, 5vw, 6.25rem);
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      font-weight: bold;
+      font-family: 'Monstafaller Free', Impact, 'Arial Black', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%;
+    }
+
+    p {
+      font-size: clamp(1rem, 2vw, 1.375rem);
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+      color: #000031;
+      max-width: 56.25rem;
+      text-align: left;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+    }
+
+    /* Landing Screen */
+    .landing-screen {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+      border-radius: 12px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding: 4rem 3rem;
+      width: 100%;
+      background-repeat: repeat-y;
+      background-size: cover;
+      background-position: center top;
+      background-image: url("data:image/svg+xml,%3Csvg width='1220' height='800' viewBox='0 0 1220 800' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_7749_8408)'%3E%3Cpath d='M0 12C0 5.37257 5.37258 0 12 0H1208C1214.63 0 1220 5.37258 1220 12V788C1220 794.627 1214.63 800 1208 800H12C5.3726 800 0 794.627 0 788V12Z' fill='%23C3C3AB'/%3E%3Cg filter='url(%23filter0_f_7749_8408)'%3E%3Cpath d='M364 910.378C364 1016.63 276.472 1102.76 168.5 1102.76C60.5283 1102.76 -27 1016.63 -27 910.378C-27 804.131 60.5283 718 168.5 718C276.472 718 364 804.131 364 910.378Z' fill='%238D0F30'/%3E%3C/g%3E%3Cg filter='url(%23filter1_f_7749_8408)'%3E%3Cellipse cx='1066.5' cy='800.378' rx='195.5' ry='192.378' fill='%23696A2E'/%3E%3C/g%3E%3Cg filter='url(%23filter2_f_7749_8408)'%3E%3Cellipse cx='107' cy='45.02' rx='124' ry='122.02' fill='%23696A2E'/%3E%3C/g%3E%3Cg filter='url(%23filter3_f_7749_8408)'%3E%3Cellipse cx='916' cy='19.02' rx='124' ry='122.02' fill='%238D0F30'/%3E%3C/g%3E%3Cg filter='url(%23filter4_f_7749_8408)'%3E%3Cpath d='M726.478 681.03C582.068 664.008 355 706.418 355 706.418C355 706.418 578.812 772.157 726.478 779.371C840.415 784.938 1018 760.987 1018 760.987C1018 760.987 843.717 694.85 726.478 681.03Z' fill='%236EA6BA'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_7749_8408' x='-438.52' y='306.48' width='1214.04' height='1207.8' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='205.76' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter1_f_7749_8408' x='459.48' y='196.48' width='1214.04' height='1207.8' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='205.76' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter2_f_7749_8408' x='-368.3' y='-428.3' width='950.6' height='946.64' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='175.65' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter3_f_7749_8408' x='380.48' y='-514.52' width='1071.04' height='1067.08' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='205.76' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter4_f_7749_8408' x='234.3' y='556.3' width='904.4' height='344.61' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='60.35' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3CclipPath id='clip0_7749_8408'%3E%3Cpath d='M0 12C0 5.37257 5.37258 0 12 0H1208C1214.63 0 1220 5.37258 1220 12V788C1220 794.627 1214.63 800 1208 800H12C5.3726 800 0 794.627 0 788V12Z' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    }
+
+    .landing-screen.hidden {
+      display: none;
+    }
+
+    .landing-content {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .play-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      background: white;
+      border: none;
+      border-radius: 100px;
+      padding: 10px;
+      font-size: 2.5rem;
+      color: #000031;
+      font-family: 'Monstafaller Free';
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%;
+      cursor: pointer;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+    }
+
+    .play-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .play-button:active {
+      transform: translateY(0);
+    }
+
+    .play-icon {
+      width: 60px;
+      height: 60px;
+      background: #8b1538;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+
+    .play-icon:hover {
+      transform: rotate(-4deg);
+    }
+
+    .play-icon::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 20px solid white;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      margin-left: 5px;
+    }
+
+    .landing-image {
+      flex: 1;
+      position: relative;
+      min-width: 300px;
+    }
+
+    .image-stack {
+      position: relative;
+      width: 100%;
+      max-width: 550px;
+      margin-left: auto;
+      min-height: 400px;
+    }
+
+    .image-frame {
+      border-radius: 14px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: rotate(2.153deg);
+      border: 12px solid #ffffff;
+      z-index: 2;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .image-frame::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -15px;
+      width: 100%;
+      border-radius: 14px;
+      height: 100%;
+      border: 12px solid #ffff;
+      background: transparent;
+      transform: rotate(-10.395deg);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+      z-index: -1;
+    }
+
+    .image-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0px;
+    }
+
+    /* Game Screen */
+    .game-screen {
+      display: none;
+      padding: 20px;
+    }
+
+    .game-screen.active {
+      display: block;
+    }
+
+    .game-container {
+      border-radius: 12px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding: 4rem 2rem;
+      width: 100%;
+      background-repeat: repeat-y;
+      background-size: cover;
+
+      background-image: url("data:image/svg+xml,%3Csvg width='1220' height='800' viewBox='0 0 1220 800' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_7749_8408)'%3E%3Cpath d='M0 12C0 5.37257 5.37258 0 12 0H1208C1214.63 0 1220 5.37258 1220 12V788C1220 794.627 1214.63 800 1208 800H12C5.3726 800 0 794.627 0 788V12Z' fill='%23C3C3AB'/%3E%3Cg filter='url(%23filter0_f_7749_8408)'%3E%3Cpath d='M364 910.378C364 1016.63 276.472 1102.76 168.5 1102.76C60.5283 1102.76 -27 1016.63 -27 910.378C-27 804.131 60.5283 718 168.5 718C276.472 718 364 804.131 364 910.378Z' fill='%238D0F30'/%3E%3C/g%3E%3Cg filter='url(%23filter1_f_7749_8408)'%3E%3Cellipse cx='1066.5' cy='800.378' rx='195.5' ry='192.378' fill='%23696A2E'/%3E%3C/g%3E%3Cg filter='url(%23filter2_f_7749_8408)'%3E%3Cellipse cx='107' cy='45.02' rx='124' ry='122.02' fill='%23696A2E'/%3E%3C/g%3E%3Cg filter='url(%23filter3_f_7749_8408)'%3E%3Cellipse cx='916' cy='19.02' rx='124' ry='122.02' fill='%238D0F30'/%3E%3C/g%3E%3Cg filter='url(%23filter4_f_7749_8408)'%3E%3Cpath d='M726.478 681.03C582.068 664.008 355 706.418 355 706.418C355 706.418 578.812 772.157 726.478 779.371C840.415 784.938 1018 760.987 1018 760.987C1018 760.987 843.717 694.85 726.478 681.03Z' fill='%236EA6BA'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_7749_8408' x='-438.52' y='306.48' width='1214.04' height='1207.8' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='205.76' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter1_f_7749_8408' x='459.48' y='196.48' width='1214.04' height='1207.8' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='205.76' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter2_f_7749_8408' x='-368.3' y='-428.3' width='950.6' height='946.64' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='175.65' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter3_f_7749_8408' x='380.48' y='-514.52' width='1071.04' height='1067.08' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='205.76' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter4_f_7749_8408' x='234.3' y='556.3' width='904.4' height='344.61' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='60.35' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3CclipPath id='clip0_7749_8408'%3E%3Cpath d='M0 12C0 5.37257 5.37258 0 12 0H1208C1214.63 0 1220 5.37258 1220 12V788C1220 794.627 1214.63 800 1208 800H12C5.3726 800 0 794.627 0 788V12Z' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+      position: relative;
+    }
+
+    .game-images {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .image-container {
+      position: relative;
+      background: white;
+      border-radius: 8px;
+      padding: 7px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .game-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+    }
+
+    .difference-marker {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      backdrop-filter: blur(2px);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='54' height='54' viewBox='0 0 54 54' fill='none'%3E%3CforeignObject x='0' y='0' width='0' height='0'%3E%3Cdiv xmlns='http://www.w3.org/1999/xhtml' style='backdrop-filter:blur(4px);clip-path:url(%23bgblur_0_7749_8439_clip_path);height:100%25;width:100%25'%3E%3C/div%3E%3C/foreignObject%3E%3Cpath data-figma-bg-blur-radius='8' d='M27 1C41.3594 1 53 12.6406 53 27C53 41.3594 41.3594 53 27 53C12.6406 53 1 41.3594 1 27C1 12.6406 12.6406 1 27 1Z' fill='white' fill-opacity='0.5' stroke='white' stroke-width='2'/%3E%3Cdefs%3E%3CclipPath id='bgblur_0_7749_8439_clip_path' transform='translate(0 0)'%3E%3Cpath d='M27 1C41.3594 1 53 12.6406 53 27C53 41.3594 41.3594 53 27 53C12.6406 53 1 41.3594 1 27C1 12.6406 12.6406 1 27 1Z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    }
+
+    .difference-marker:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.1);
+    }
+
+    .difference-marker.found {
+      border-color: transparent;
+      background: transparent;
+      pointer-events: none;
+    }
+
+    .difference-marker.found::before,
+    .difference-marker.found::after {
+      display: none;
+    }
+
+    /* Difference positions for top image */
+    .marker-1 {
+      top: 22%;
+      left: 48%;
+    }
+    .marker-2 {
+      top: 58%;
+      right: 7%;
+    }
+
+    /* Difference positions for bottom image */
+    .marker-3 {
+      top: 30%;
+      left: 30%;
+    }
+    .marker-4 {
+      top: 68%;
+      left: 23%;
+    }
+    .marker-5 {
+      top: 68%;
+      right: 8%;
+    }
+
+    .progress {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .progress-item {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 125%;
+      color: #000031;
+      border: 2px solid #000031;
+    }
+
+    .progress-item.completed {
+      background: #8d0f30;
+      color: white;
+      border-color: #8d0f30;
+      font-size: 2rem;
+    }
+
+    /* Modal - Constrained within game-images on large screens */
+    .modal {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: #dfe0d2;
+      border-radius: 8px;
+      padding: 50px 60px;
+      max-width: 950px;
+      width: 100%;
+      display: flex;
+      gap: 50px;
+      position: relative;
+      align-items: center;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-description {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 130%;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 25px;
+      height: 25px;
+      background: #8b1538;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s;
+      z-index: 15;
+    }
+
+    .close-button:hover {
+      background: #6b0f28;
+    }
+
+    .modal-image {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .modal-image-frame {
+      background: #c3c3ab;
+      border-radius: 14px;
+      padding: 14px;
+      transform: rotate(-3.464deg);
+    }
+
+    .modal-image-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .modal-text {
+      flex: 1.2;
+      min-width: 300px;
+    }
+
+    .modal-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      font-weight: bold;
+      font-family: 'Monstafaller Free', Impact, 'Arial Black', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%;
+      color: #007;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 769px) {
+      .landing-screen {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+      }
+
+      .image-stack {
+        min-height: 400px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .landing-screen {
+        gap: 40px;
+      }
+
+      .image-stack {
+        min-height: 290px;
+      }
+
+      .landing-content {
+        max-width: 100%;
+      }
+
+      .image-stack {
+        margin: 0 auto;
+      }
+
+      .modal-content {
+        flex-direction: column;
+        padding: 40px 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .landing-screen {
+        padding: 20px;
+      }
+
+      .image-stack {
+        margin: 0 auto;
+        height: 350px;
+      }
+
+      .difference-marker {
+        width: 50px;
+        height: 50px;
+        border-width: 3px;
+      }
+
+      .difference-marker::before {
+        width: 18px;
+        height: 18px;
+      }
+
+      .difference-marker::after {
+        width: 7px;
+        height: 7px;
+      }
+
+      .progress-item {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+      }
+
+      .progress-item.completed {
+        font-size: 1.5rem;
+      }
+
+      /* Revert modal to fixed positioning on small screens */
+      .modal {
+        position: fixed;
+        border-radius: 0;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!-- Landing Screen -->
+      <div class="landing-screen" id="landingScreen">
+        <div class="landing-content">
+          <h1 class="landing-title">Spot the<br />Difference</h1>
+          <p class="landing-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip.
+          </p>
+          <button class="play-button" id="playButton">
+            <div class="play-icon"></div>
+            Play Now!
+          </button>
+        </div>
+        <div class="landing-image">
+          <div class="image-stack">
+            <div class="image-frame">
+              <img
+                src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=500&h=350&fit=crop"
+                alt="Game preview"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Screen -->
+      <div class="game-screen" id="gameScreen">
+        <h1 class="game-title">Concentration Game - Spot the<br />Difference</h1>
+        <p class="game-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip.
+        </p>
+
+        <div class="game-container">
+          <div class="game-images">
+            <!-- Top Image -->
+            <div class="image-container">
+              <img
+                src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1100&h=350&fit=crop"
+                alt="Find differences"
+                class="game-image"
+              />
+              <div class="difference-marker marker-1" data-id="1"></div>
+              <div class="difference-marker marker-2" data-id="2"></div>
+            </div>
+
+            <!-- Bottom Image -->
+            <div class="image-container">
+              <img
+                src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1100&h=350&fit=crop"
+                alt="Find differences"
+                class="game-image"
+              />
+              <div class="difference-marker marker-3" data-id="3"></div>
+              <div class="difference-marker marker-4" data-id="4"></div>
+              <div class="difference-marker marker-5" data-id="5"></div>
+            </div>
+
+            <!-- Modal inside game-images -->
+            <div class="modal" id="modal">
+              <div class="modal-content">
+                <button class="close-button" id="closeButton">✕</button>
+                <div class="modal-image">
+                  <div class="modal-image-frame">
+                    <img
+                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+                      alt="Difference found"
+                    />
+                  </div>
+                </div>
+                <div class="modal-text">
+                  <h2 class="modal-title">Title of pop-up</h2>
+                  <p class="modal-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-item completed">✓</div>
+            <div class="progress-item" data-progress="2">02</div>
+            <div class="progress-item" data-progress="3">03</div>
+            <div class="progress-item" data-progress="4">04</div>
+            <div class="progress-item" data-progress="5">05</div>
+            <div class="progress-item" data-progress="6">06</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let foundDifferences = 1;
+
+      // Play button
+      document.getElementById('playButton').addEventListener('click', function () {
+        document.getElementById('landingScreen').classList.add('hidden');
+        document.getElementById('gameScreen').classList.add('active');
+      });
+
+      // Difference markers
+      document.querySelectorAll('.difference-marker').forEach((marker) => {
+        marker.addEventListener('click', function () {
+          if (!this.classList.contains('found')) {
+            this.classList.add('found');
+            foundDifferences++;
+
+            // Update progress
+            const progressItem = document.querySelector(`[data-progress="${foundDifferences}"]`);
+            if (progressItem) {
+              progressItem.classList.add('completed');
+              progressItem.textContent = '✓';
+            }
+
+            // Show modal
+            document.getElementById('modal').classList.add('active');
+          }
+        });
+      });
+
+      // Close modal
+      document.getElementById('closeButton').addEventListener('click', function () {
+        document.getElementById('modal').classList.remove('active');
+      });
+
+      // Close modal on outside click
+      document.getElementById('modal').addEventListener('click', function (e) {
+        if (e.target === this) {
+          this.classList.remove('active');
+        }
+      });
+    </script>
+  </body>
+</html>
