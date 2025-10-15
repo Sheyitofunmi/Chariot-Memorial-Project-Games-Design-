@@ -1,154 +1,158 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>St Nazaire Raid Memorial Trust</title>
-  <meta name="description" content="operation Chariot Memorial Project
-    Games Design">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>St Nazaire Raid Memorial Trust</title>
+    <meta
+      name="description"
+      content="operation Chariot Memorial Project
+    Games Design"
+    />
 
-  <!-- Standard favicon -->
-  <link rel="icon" href="images/favicon.png" type="image/png">
+    <!-- Standard favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
 
-
-
-  <!-- Link to your stylesheet (same folder) -->
-  <link rel="stylesheet" href="style.css?v=1.0">
-
-</head>
-
-<body>
+    <!-- Link to your stylesheet (same folder) -->
+    <link rel="stylesheet" href="style.css?v=1.0" />
+  </head>
+  <body>
     <div class="container">
-        <!-- Landing Screen -->
-        <div class="landing-screen" id="landingScreen">
-            <div class="landing-content">
-                <h1 class="landing-title">Spot the<br>Difference</h1>
-                <p class="landing-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-                </p>
-                <button class="play-button" id="playButton">
-                    <div class="play-icon"></div>
-                    Play Now!
-                </button>
-            </div>
-            <div class="landing-image">
-                <div class="image-stack">
-                   
-
-                        <div class="image-frame">
-                            <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=500&h=350&fit=crop" alt="Game preview">
-                        </div>
-                </div>
-            </div>
+      <!-- Landing Screen -->
+      <div class="landing-screen" id="landingScreen">
+        <div class="landing-content">
+          <h1 class="landing-title">Spot the<br />Difference</h1>
+          <p class="landing-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip.
+          </p>
+          <button class="play-button" id="playButton">
+            <div class="play-icon"></div>
+            Play Now!
+          </button>
         </div>
-
-        <!-- Game Screen -->
-        <div class="game-screen" id="gameScreen">
-            <h1 class="game-title">Concentration Game - Spot the<br>Difference</h1>
-            <p class="game-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-            </p>
-
-            <div class="game-images">
-                <!-- Top Image -->
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1100&h=350&fit=crop" alt="Find differences" class="game-image">
-                    <div class="difference-marker marker-1" data-id="1"></div>
-                    <div class="difference-marker marker-2" data-id="2"></div>
-                </div>
-
-                <!-- Bottom Image -->
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1100&h=350&fit=crop" alt="Find differences" class="game-image">
-                    <div class="difference-marker marker-3" data-id="3"></div>
-                    <div class="difference-marker marker-4" data-id="4"></div>
-                    <div class="difference-marker marker-5" data-id="5"></div>
-                </div>
+        <div class="landing-image">
+          <div class="image-stack">
+            <div class="image-frame">
+              <img
+                src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=500&h=350&fit=crop"
+                alt="Game preview"
+              />
             </div>
-
-            <div class="progress">
-                <div class="progress-item completed">✓</div>
-                <div class="progress-item" data-progress="2">02</div>
-                <div class="progress-item" data-progress="3">03</div>
-                <div class="progress-item" data-progress="4">04</div>
-                <div class="progress-item" data-progress="5">05</div>
-                <div class="progress-item" data-progress="6">06</div>
-            </div>
+          </div>
         </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <button class="close-button" id="closeButton">✕</button>
-            <div class="modal-image">
+      </div>
+  
+      <!-- Game Screen -->
+      <div class="game-screen" id="gameScreen">
+        <h1 class="game-title">Concentration Game - Spot the<br />Difference</h1>
+        <p class="game-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip.
+        </p>
+  
+        <div class="game-images">
+          <!-- Top Image -->
+          <div class="image-container">
+            <img
+              src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1100&h=350&fit=crop"
+              alt="Find differences"
+              class="game-image"
+            />
+            <div class="difference-marker marker-1" data-id="1"></div>
+            <div class="difference-marker marker-2" data-id="2"></div>
+          </div>
+  
+          <!-- Bottom Image -->
+          <div class="image-container">
+            <img
+              src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1100&h=350&fit=crop"
+              alt="Find differences"
+              class="game-image"
+            />
+            <div class="difference-marker marker-3" data-id="3"></div>
+            <div class="difference-marker marker-4" data-id="4"></div>
+            <div class="difference-marker marker-5" data-id="5"></div>
+          </div>
+  
+          <!-- Modal inside game-images -->
+          <div class="modal" id="modal">
+            <div class="modal-content">
+              <button class="close-button" id="closeButton">✕</button>
+              <div class="modal-image">
                 <div class="modal-image-frame">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Difference found">
+                  <img
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+                    alt="Difference found"
+                  />
                 </div>
-            </div>
-            <div class="modal-text">
+              </div>
+              <div class="modal-text">
                 <h2 class="modal-title">Title of pop-up</h2>
                 <p class="modal-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum dolore.
                 </p>
+              </div>
             </div>
+          </div>
         </div>
+  
+        <div class="progress">
+          <div class="progress-item completed">✓</div>
+          <div class="progress-item" data-progress="2">02</div>
+          <div class="progress-item" data-progress="3">03</div>
+          <div class="progress-item" data-progress="4">04</div>
+          <div class="progress-item" data-progress="5">05</div>
+          <div class="progress-item" data-progress="6">06</div>
+        </div>
+      </div>
     </div>
-
+  
     <script>
-        let foundDifferences = 1;
-
-        // Play button
-        document.getElementById('playButton').addEventListener('click', function() {
-            document.getElementById('landingScreen').classList.add('hidden');
-            document.getElementById('gameScreen').classList.add('active');
-        });
-
-        // Difference markers
-        document.querySelectorAll('.difference-marker').forEach(marker => {
-            marker.addEventListener('click', function() {
-                if (!this.classList.contains('found')) {
-                    this.classList.add('found');
-                    foundDifferences++;
-                    
-                    // Update progress
-                    const progressItem = document.querySelector(`[data-progress="${foundDifferences}"]`);
-                    if (progressItem) {
-                        progressItem.classList.add('completed');
-                        progressItem.textContent = '✓';
-                    }
-                    
-                    // Show modal
-                    document.getElementById('modal').classList.add('active');
-                }
-            });
-        });
-
-        // Close modal
-        document.getElementById('closeButton').addEventListener('click', function() {
-            document.getElementById('modal').classList.remove('active');
-        });
-
-        // Close modal on outside click
-        document.getElementById('modal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                this.classList.remove('active');
+      let foundDifferences = 1;
+  
+      // Play button
+      document.getElementById('playButton').addEventListener('click', function () {
+        document.getElementById('landingScreen').classList.add('hidden');
+        document.getElementById('gameScreen').classList.add('active');
+      });
+  
+      // Difference markers
+      document.querySelectorAll('.difference-marker').forEach((marker) => {
+        marker.addEventListener('click', function () {
+          if (!this.classList.contains('found')) {
+            this.classList.add('found');
+            foundDifferences++;
+  
+            // Update progress
+            const progressItem = document.querySelector(`[data-progress="${foundDifferences}"]`);
+            if (progressItem) {
+              progressItem.classList.add('completed');
+              progressItem.textContent = '✓';
             }
+  
+            // Show modal
+            document.getElementById('modal').classList.add('active');
+          }
         });
+      });
+  
+      // Close modal
+      document.getElementById('closeButton').addEventListener('click', function () {
+        document.getElementById('modal').classList.remove('active');
+      });
+  
+      // Close modal on outside click
+      document.getElementById('modal').addEventListener('click', function (e) {
+        if (e.target === this) {
+          this.classList.remove('active');
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

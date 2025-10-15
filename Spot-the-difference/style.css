@@ -101,7 +101,6 @@ p {
   font-size: 2.5rem;
   color: #000031;
   font-family: 'Monstafaller Free';
-
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
@@ -161,26 +160,6 @@ p {
   min-height: 400px;
 }
 
-.image-frame-wrapper {
-  position: relative;
-  height: 100%;
-}
-
-/* Empty white frame in the back */
-.image-border-back {
-  border-radius: 8px;
-  transform: rotate(-6.395deg);
-  position: absolute;
-  top: 20px;
-  left: -20px;
-  width: 85%;
-  border: 12px solid #ffff;
-  height: 380px;
-  background: transparent;
-  z-index: 1;
-}
-
-/* Frame with actual image on top */
 .image-frame {
   border-radius: 14px;
   position: absolute;
@@ -192,7 +171,6 @@ p {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* Back frame using ::before */
 .image-frame::before {
   content: '';
   position: absolute;
@@ -219,30 +197,10 @@ p {
 .game-screen {
   display: none;
   padding: 20px;
-
-  
 }
 
 .game-screen.active {
   display: block;
-}
-
-.game-title {
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
-  color: #00008b;
-  font-weight: 900;
-  margin-bottom: 20px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-}
-
-.game-description {
-  font-family: 'Arial', sans-serif;
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
-  color: #000;
-  margin-bottom: 50px;
-  line-height: 1.6;
-  font-weight: 400;
 }
 
 .game-images {
@@ -262,6 +220,7 @@ p {
   background-size: cover;
   background-position: center top;
   background-image: url("data:image/svg+xml,%3Csvg width='1220' height='800' viewBox='0 0 1220 800' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_7749_8408)'%3E%3Cpath d='M0 12C0 5.37257 5.37258 0 12 0H1208C1214.63 0 1220 5.37258 1220 12V788C1220 794.627 1214.63 800 1208 800H12C5.3726 800 0 794.627 0 788V12Z' fill='%23C3C3AB'/%3E%3Cg filter='url(%23filter0_f_7749_8408)'%3E%3Cpath d='M364 910.378C364 1016.63 276.472 1102.76 168.5 1102.76C60.5283 1102.76 -27 1016.63 -27 910.378C-27 804.131 60.5283 718 168.5 718C276.472 718 364 804.131 364 910.378Z' fill='%238D0F30'/%3E%3C/g%3E%3Cg filter='url(%23filter1_f_7749_8408)'%3E%3Cellipse cx='1066.5' cy='800.378' rx='195.5' ry='192.378' fill='%23696A2E'/%3E%3C/g%3E%3Cg filter='url(%23filter2_f_7749_8408)'%3E%3Cellipse cx='107' cy='45.02' rx='124' ry='122.02' fill='%23696A2E'/%3E%3C/g%3E%3Cg filter='url(%23filter3_f_7749_8408)'%3E%3Cellipse cx='916' cy='19.02' rx='124' ry='122.02' fill='%238D0F30'/%3E%3C/g%3E%3Cg filter='url(%23filter4_f_7749_8408)'%3E%3Cpath d='M726.478 681.03C582.068 664.008 355 706.418 355 706.418C355 706.418 578.812 772.157 726.478 779.371C840.415 784.938 1018 760.987 1018 760.987C1018 760.987 843.717 694.85 726.478 681.03Z' fill='%236EA6BA'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_7749_8408' x='-438.52' y='306.48' width='1214.04' height='1207.8' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='205.76' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter1_f_7749_8408' x='459.48' y='196.48' width='1214.04' height='1207.8' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='205.76' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter2_f_7749_8408' x='-368.3' y='-428.3' width='950.6' height='946.64' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='175.65' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter3_f_7749_8408' x='380.48' y='-514.52' width='1071.04' height='1067.08' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='205.76' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3Cfilter id='filter4_f_7749_8408' x='234.3' y='556.3' width='904.4' height='344.61' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='60.35' result='effect1_foregroundBlur_7749_8408'/%3E%3C/filter%3E%3CclipPath id='clip0_7749_8408'%3E%3Cpath d='M0 12C0 5.37257 5.37258 0 12 0H1208C1214.63 0 1220 5.37258 1220 12V788C1220 794.627 1214.63 800 1208 800H12C5.3726 800 0 794.627 0 788V12Z' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  position: relative;
 }
 
 .image-container {
@@ -277,7 +236,6 @@ p {
   height: auto;
   display: block;
   border-radius: 6px;
-  
 }
 
 .difference-marker {
@@ -385,10 +343,10 @@ p {
   font-size: 2rem;
 }
 
-/* Modal */
+/* Modal - Constrained within game-images on large screens */
 .modal {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -398,6 +356,7 @@ p {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  border-radius: 12px;
 }
 
 .modal.active {
@@ -493,14 +452,12 @@ p {
   .image-stack {
     min-height: 400px;
   }
-
 }
 
 @media (max-width: 1024px) {
   .landing-screen {
-    /* flex-direction: column; */
+    /* flex-direction: row; */
     gap: 40px;
-    /* text-align: center; */
   }
 
   .image-stack {
@@ -516,7 +473,7 @@ p {
   }
 
   .modal-content {
-    flex-direction: column;
+    flex-direction: row;
     padding: 40px 30px;
   }
 }
@@ -531,8 +488,8 @@ p {
     height: 350px;
   }
 
-  .image-border-back {
-    height: 280px;
+  .modal-content {
+    flex-direction: column;
   }
 
   .difference-marker {
@@ -559,5 +516,11 @@ p {
 
   .progress-item.completed {
     font-size: 1.5rem;
+  }
+
+  /* Revert modal to fixed positioning on small screens */
+  .modal {
+    position: fixed;
+    border-radius: 0;
   }
 }
